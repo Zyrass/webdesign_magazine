@@ -5,7 +5,6 @@ html, body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Verdana', 'sans-serif';
-	background-color: rgb(21, 34, 47);
 }
 
 /* conteneur de la navigation */
@@ -21,12 +20,17 @@ nav a {
 	width: 100%;
 	padding: 10%
 	font-size: 1.5em;
-	border: 1px solid #fff;
+	border: 1px solid #000;
+	background: #333;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
 }
 
-nav:target a {
+nav:target a{
 	display: block;
 }
+
 
 /* style hamburger */
 nav > *:nth-child(1) {
@@ -38,13 +42,13 @@ nav > *:nth-child(1) span {
 	position: relative;
 	display: block;
 	width: 100%;
-	height: .2em;
+	height: .5em;
 	margin-top: .25em;
 	background-color: #fff;
 }
 
 /* préparation de l'animation */
-nav > *:nth-child(1) span:before {
+nav > *:nth-child(1) span::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -52,7 +56,7 @@ nav > *:nth-child(1) span:before {
 	width: 0;
 	height: 100%;
 	background-color: red;
-	transition: width 1s ease-in-out;
+	transition: width 1s;
 }
 
 /* paramètres des barres */
@@ -64,17 +68,12 @@ nav > *:nth-child(1):hover span:nth-child(2)::before {
 	animation-delay: .15s
 }
 
-nav > *:nth-child(1):hover span:nth-child(3)::before {
+nav > *:nth-child(1):hover span:nth-child(3)::before{
 	animation-delay: .3s
 }
 
 /* définition de l'animation */
-@keyframe open {
-	0% {
-		width: 0;
-	}
-
-	100% {
-		width: 100%;
-	}
+@keyframes open {
+	0% {	width: 0; 	}
+	100% { width: 100%; 	}
 }

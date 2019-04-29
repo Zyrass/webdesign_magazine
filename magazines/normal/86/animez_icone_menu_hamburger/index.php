@@ -28,6 +28,4 @@
 			<a href="#">Menu 3</a>
 		</nav>
 	</body>
-
-	<?php include '../../../../partials/_footer.php'; ?>
 </html>
