@@ -41,7 +41,7 @@
                         <th>#82</th>
                         <td>magazine</td>
                         <td>Découvrez Node JS</td>
-                        <td><a href="magazines/normal/86/animez_icone_menu_hamburger/index.php">Animez l'icône d'un menu hamburger</a></td>
+                        <td><a href="magazines/normal/82/animez_icone_menu_hamburger/index.php">Animez l'icône d'un menu hamburger</a></td>
                         <td>html - css</td>
                         <td>18</td>
                         <td>3 visuellement parlant je n'accroche pas</td>
@@ -50,7 +50,7 @@
                         <th>#82</th>
                         <td>magazine</td>
                         <td>Découvrez Node JS</td>
-                        <td><a href="magazines/normal/86/Creer_un_effet_aquarel_avec_webgl/index.html">Créer un magnifique effet en aquarel avec WebGL</a></td>
+                        <td><a href="magazines/normal/82/Creer_un_effet_aquarel_avec_webgl/index.html">Créer un magnifique effet en aquarel avec WebGL</a></td>
                         <td>html - css</td>
                         <td>56</td>
                         <td>9 Le code est complexe mais le rendus est topissime !!</td>
