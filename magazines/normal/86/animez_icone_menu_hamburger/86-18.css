@@ -1,0 +1,80 @@
+html, body {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Verdana', 'sans-serif';
+	background-color: rgb(21, 34, 47);
+}
+
+/* conteneur de la navigation */
+nav {
+	display: block;
+	width: 25%;
+	margin: 0;
+}
+
+/* lien de la navigation par défaut */
+nav a {
+	display: none;
+	width: 100%;
+	padding: 10%
+	font-size: 1.5em;
+	border: 1px solid #fff;
+}
+
+nav:target a {
+	display: block;
+}
+
+/* style hamburger */
+nav > *:nth-child(1) {
+	display: block;
+	width: 5em;
+}
+
+nav > *:nth-child(1) span {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: .2em;
+	margin-top: .25em;
+	background-color: #fff;
+}
+
+/* préparation de l'animation */
+nav > *:nth-child(1) span:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background-color: red;
+	transition: width 1s ease-in-out;
+}
+
+/* paramètres des barres */
+nav > *:nth-child(1):hover span::before {
+	animation: open 1s forwards;
+}
+
+nav > *:nth-child(1):hover span:nth-child(2)::before {
+	animation-delay: .15s
+}
+
+nav > *:nth-child(1):hover span:nth-child(3)::before {
+	animation-delay: .3s
+}
+
+/* définition de l'animation */
+@keyframe open {
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 100%;
+	}
+}
